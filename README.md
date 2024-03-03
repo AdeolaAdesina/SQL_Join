@@ -111,7 +111,7 @@ INSERT INTO Instructors VALUES
 
 ## Inner Join
 
-```
+
  INNER JOIN
 Query: Match students with their primary course of interest.
 
