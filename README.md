@@ -141,3 +141,5 @@ SELECT S.student_name, C.course_name
 FROM Courses C
 LEFT JOIN Students S ON C.course_id = S.primary_course_id;
 ```
+
+
