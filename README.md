@@ -108,3 +108,36 @@ INSERT INTO Instructors VALUES
 ```
 
 
+
+## Inner Join
+
+```
+ INNER JOIN
+Query: Match students with their primary course of interest.
+
+```
+SELECT S.student_name, C.course_name
+FROM Students S
+INNER JOIN Courses C ON S.primary_course_id = C.course_id;
+```
+
+
+##  LEFT JOIN
+Query: List all students and their primary course of interest, including those without one.
+
+
+```
+SELECT S.student_name, C.course_name
+FROM Students S
+LEFT JOIN Courses C ON S.primary_course_id = C.course_id;
+```
+
+
+## RIGHT JOIN
+Query: List all courses and any students who have them as their primary interest.
+
+```
+SELECT S.student_name, C.course_name
+FROM Courses C
+LEFT JOIN Students S ON C.course_id = S.primary_course_id;
+```
